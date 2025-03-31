@@ -42,6 +42,7 @@ dependencies:
   http: null
   flutter_dotenv: null
   fluttertoast: null
+  url_launcher: null
   
 dev_dependencies:
   flutter_test:

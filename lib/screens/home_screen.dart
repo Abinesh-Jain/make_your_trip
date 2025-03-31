@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 import '../components/offer_image.dart';
 import '../core/app_colors.dart';
 import '../core/app_routes.dart';
+import '../utils/endpoints.dart';
 import '../utils/strings.dart';
 import '../utils/textstyles.dart';
 
@@ -68,7 +70,7 @@ class HomeScreen extends StatelessWidget {
               style: Textstyles.f14w500,
             ),
             trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-            onTap: () {},
+            onTap: () => launchUrlString(Endpoints.github),
           ),
           ListTile(
             leading: const Icon(Icons.privacy_tip, color: AppColors.accent),
@@ -77,7 +79,7 @@ class HomeScreen extends StatelessWidget {
               style: Textstyles.f14w500,
             ),
             trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-            onTap: () {},
+            onTap: () => launchUrlString(Endpoints.makeYourTrip),
           ),
           ListTile(
             leading: const Icon(Icons.contact_mail, color: AppColors.accent),
@@ -86,7 +88,7 @@ class HomeScreen extends StatelessWidget {
               style: Textstyles.f14w500,
             ),
             trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-            onTap: () {},
+            onTap: () => launchUrlString(Endpoints.actions),
           ),
           const SizedBox(height: 16),
         ],
